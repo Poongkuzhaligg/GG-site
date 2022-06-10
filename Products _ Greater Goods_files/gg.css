@@ -42,12 +42,11 @@ body {
     font-weight: 75;
 }
 main {
-    /* margin-top: 10px; */
+    margin-top: 10px;
 }
 
 .main-1 {
     display: flex;
-    flex-direction: column;
 }
 .side-card {
     height: 100vh;
@@ -68,17 +67,18 @@ main {
     border-bottom: 1px solid rgb(228, 225, 225);
 }
 
-.side-el {
-    top: 100px;
-}
+#el-1
+ {
+     color: black;
+} 
 
 .side-el a {
-    /* margin-top: rem; */
-    /* margin-left:1rem ; */
+    margin-top: rem;
+    margin-left:1rem ;
     font-weight: 75;
-    /* text-decoration: none; */
-    color: rgb(131, 131, 131);
-    /* align-items: center; */
+    text-decoration: none;
+    color: rgb(72, 71, 71);
+    align-items: center;
     font-size: small;
 }
 
@@ -95,31 +95,16 @@ main {
 
 .pd{
     padding: 1rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
     width: 500px;
-    height: 352px;
-    background-color:rgb(242, 240, 240) ;
+    height: 320px;
+    background-color:rgb(246, 246, 246) ;
     position: absolute;
     right: 2%;
 }
 
 .pd-header {
-    font-size: 3rem;
-    font-weight: 250;
-    color: rgb(73, 73, 73);
-}
 
-.pd-cont {
-    font-family: 100;
-    color: rgb(73, 73, 73);
-}
-
-.pd-foot {
-    color: rgb(73, 73, 73)
-}
-
-.product{
-    position: absolute;
 }
 
     
