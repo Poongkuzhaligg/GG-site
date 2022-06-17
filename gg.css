@@ -1,3 +1,7 @@
+/* * {
+    box-sizing: border-box;
+} */
+
 body {
     font-family: 'openSans',sans-serif;
     margin: 0;
@@ -46,8 +50,12 @@ body {
 }
 
 .sec-1 {
+    /* box-sizing: border-box; */
     font-family: 'openSans', sans-serif;
-    display: flex;
+    /* display: flex;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
 }
 
 .card {
@@ -56,11 +64,12 @@ body {
     padding-left: 10px;
     position: sticky;
     background-color: rgb(255, 255, 255);
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 #side-card {
     list-style: none;
+    padding-left: 20px;
 }
 
 .search-bar {
@@ -90,27 +99,40 @@ body {
     color: black;
 }
 
+.bg-pd {
+    display: flex;
+    flex-flow: column;
+}
+
 .bg-img {
     background: url("Dragonfruit.png");
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover ;
-    width: 570px;
+    width: 100%;
     height: 300px;
     padding: 10px;
     margin-left: 50px;
-    margin-top: 70px;
+    margin-top: 90px;
+}
+
+#pd-heading {
+    flex-flow: wrap;
+    padding-left:50px;
+    font-weight: 100;
+    font-size: 20px;
 }
 
 .main-con {
-    width: 550px;
-    height: 320px;
-    background-color: rgb(244, 244, 244);
-    margin-top: 70px;
+    /* width: 550px;
+    height: 340px; */
+    margin-top: 50px;
 }
 
 .con {
     font-family: 'openSans', sans-serif;
+    height: 320px ;
+    background-color: rgb(244, 244, 244);
 }
 
 .con-head {
@@ -135,23 +157,24 @@ body {
 
 .pds {
     padding-left: 255px;
-}
-
-#pd-heading {
-    font-family: 'openSans', sans-serif;
-    font-weight: 50;
-    font-size:x-large;
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding-top: 20px;
+    margin-right: 50px;
 }
 
 #pd-shop {
     display: flex;
+    flex: 25% 25% 25% 25%;
     /* margin: 40px; */
+    flex-flow: row wrap;
 }
 
 .product {
     width: 230px;
     height: 300px;
     /* padding-left: 10px; */
+    position: relative;
 }
 
 .product:hover {
@@ -187,7 +210,7 @@ body {
     padding-left: 10px;
 }
 
-#img-3 {
+/* #img-3 {
     padding-left: 10px;
 }
 
@@ -196,7 +219,7 @@ body {
     height: 160px;
     padding-left: 10px;
     padding-bottom: 20px;
-}
+} */
 
 /* #img-5 {
     background: url("img5.jpg");
@@ -213,13 +236,14 @@ body {
 
 .bg-img-1 {
     background: url("subscribe.jpg");
-    width: 500px;
-    height: 290px;
+    width: 530px;
+    height: 300px;
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover ;
     margin-left: 250px;
     margin-top: 100px;
+    position: relative;
 }
 
 #donate {
@@ -228,6 +252,7 @@ body {
 }
 
 #don-head {
+    width: 420px;
     margin-top: 0;
     margin-bottom: 20px;
     font-weight: 150;
@@ -237,11 +262,11 @@ body {
 }
 
 #don-con {
+    width: 380px;
     margin-top: 0;
     font-weight: 100;
-    color:rgb(127, 127, 127);
+    color:rgb(105, 105, 105);
     margin-bottom: 50px;
-
 }
 
 .button {
@@ -250,22 +275,19 @@ body {
     background-color: rgb(15, 160, 222);
     text-align: center;
     border-radius: 20px;
-
+    padding-top: 10px;
 }
 
 .sub-button {
     text-decoration: none;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 300;
     font-size: medium;
     color: white;
     top: 10%;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
-.sub-button a{
-    padding-top: 30px;
-}
 
 .footer {
     background-color: rgb(66, 66, 66);
@@ -363,7 +385,112 @@ body {
     font-size: small;
 }
 
+@media screen and (max-width:1200px) { 
+
+    .sec-1 {
+        height: 400px;
+        width: auto;
+        padding-left: 10px;
+    }
+
+    .con {
+        width: 100%;
+    }
+
+    .pds {
+        /* width: 1000px;
+        height: 2800px; */
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .main-con {
+        display: none;
+    }
+
+    .sec-1 {
+        padding-left: 0;
+        
+    }
+    
+    #pd-heading {
+        font-size: medium;
+        padding-left: 10px;
+    }
+
+    .pds {
+        margin-right: 50px;
+    }
+
+    .subscribe {
+        height: 850px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .bg-img {
+        width: 600px;
+        height: 200px;
+    }
+
+    .bg-img-1 {
+        height: 550px;
+        width : 950px;
+        margin-top: 10px;
+        margin-left: 20px;
+        
+    }
+
+    #donate  {
+        margin-top: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #don-con {
+        width: 930px;
+        margin-bottom: 20px;
+    }
+    
+}
+
 @media (max-width: 40rem) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .bg-img-1 {
+        width: 330px;
+        height: 200px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #donate  {
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #don-head {
+        font-size: 22px;
+    }
+
+    #don-con {
+        width: 500px;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
     .footer {
         display: flex;
         flex-flow: column;
