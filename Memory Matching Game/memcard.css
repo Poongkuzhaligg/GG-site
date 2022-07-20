@@ -1,0 +1,67 @@
+
+#heading {
+    color: rgb(21, 69, 83);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.game {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* /* grid-template-rows: 100px 100px 100px 100px; */
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-rows: auto auto auto auto;
+    border: 1x solid black;
+    color: aliceblue;
+    perspective: 700px;
+    height: 700px;
+    width: 700px;
+    margin-top: 40px;
+    background-image: linear-gradient(to right bottom, rgb(80, 18, 56), rgb(80, 18, 56), rgb(254, 125, 26), rgb(254, 125, 26));
+    justify-items: center;
+    padding-top: 25px;
+    border-radius: 10px;
+    margin: auto;
+
+}
+
+.card {
+    width: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    margin: 0;
+}
+
+/* .card:hover {
+    transform: rotateY(180deg);
+    transition: transform 1s;
+} */
+
+
+card.flip {
+    transform: rotateY(180deg);
+
+}
+
+.fro-img,
+.hid-img {
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.hid-img {
+    width: 150px;
+    height: 150px;
+    transform: rotateY(180deg);
+    background-color: rgba(240, 248, 255, 0.392);
+    border: 3px solid black;
+}
+
+.fro-img {
+    width: 150px;
+    height: 150px;
+}
