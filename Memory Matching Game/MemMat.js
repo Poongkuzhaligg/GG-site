@@ -1,35 +1,166 @@
-
-// const items = [ [{x1}, {x2}, {x3}, {x4}],
-// [{x5}, {x6}, {x7}, {x8}], [{x9}, {x10}, {x11}, {x12}], [{x13}, {x14}, {x15}, {x16}] ];
- var cell = {
-     1: "./candy.png",
-     2: "./cottoncandy.png",
-     3: "./lolipop.png",
-     4: "./cane.png",
-     5: "./jelly.png",
-     6: "./corn.png",
-     7: "./candy.png",
-     8: "./choco.webp",
-     9: "./heartcandy.png",
-     10: "./lolipop.png",
-     11: "./jelly.png",
-     12: "./cane.png",
-     13: "./cottoncandy.png",
-     14: "./corn.png",
-     15: "./choco.webp",
-     16: "./heartcandy.png"
- }
-
+var hasclicked = false;
+var cardOne, cardTwo;
+let cardOneVal, cardTwoVal;
+var arClick = [];
 function image (x) {
     
-    // var cell = {
-    //     1: "./candy.png"
-    // };
-// console.log(x);
-// console.log(cell);
-var clcard = 'img-'+x;
-document.getElementById( clcard ).src = cell[x];
-}
+    // var randomImg = [];
+    // randomImg = [ ./candy.png, "./cottoncandy.png",
+    // "./lolipop.png", "./cane.png", "./jelly.png", 
+    // "./corn.png", "./choco.webp", "./heartcandy.png",
+    // "./corn.png", "./lolipop.png", "./jelly.png",
+    // "./cane.png", "./cottoncandy.png", "./candy.png",
+    //  "./heartcandy.png", "./choco.webp" ]
+
+
+
+    var cell = {
+        1: "./candy.png",
+        2: "./cottoncandy.png",
+        3: "./lolipop.png",
+        4: "./marsh.png",
+        5: "./jelly.png",
+        6: "./corn.png",
+        7: "./choco.webp",
+        8: "./heartcandy.png",
+        9:  "./corn.png",
+        10: "./lolipop.png",
+        11: "./jelly.png",
+        12: "./marsh.png",
+        13: "./cottoncandy.png",
+        14: "./candy.png",
+        15: " ./heartcandy.png",
+        16: "./choco.webp"
+    }
+    var clcard = 'img-'+ x;
+
+    document.getElementById(clcard ).src = cell[x];
+    arClick.push(x);
+    console.log(arClick);
+
+    cardOne = arClick[0];
+    console.log(cardOne);
+    
+    cardTwo = arClick[1];
+    console.log(cardTwo);
+
+        // matchCard();    
+    }
+
+    // else {
+    //     return;
+    // }
+    // console.log(arClick.length);
+
+    // if(!hasclicked) {
+    //     hasclicked = true;
+
+        // cardTwo = arclick[1];
+    //     return this;
+    // }
+
+    // cardTwo= arclick[1];
+    // hasclicked = true;
+
+
+
+// function matchCard() {
+
+//     if(cardOneVal === cardTwoVal){
+//         console.log("The card is matched")
+//     }
+
+//     else {
+//         console.log("The card is not matched")
+//     }
+//     // if(Object.values(cardOne) === Object.values(cardTwo)){
+//     //     console.log("The card is matched")
+//     // }
+
+//     // else {
+//     //     console.log("The card is not matched")
+//     // }
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function image (x) {
+//     var cell = {
+//         1: "./candy.png",
+//         2: "./cottoncandy.png",
+//         3: "./lolipop.png",
+//         4: "./cane.png",
+//         5: "./jelly.png",
+//         6: "./corn.png",
+//         7: "./candy.png",
+//         8: "./choco.webp",
+//         9: "./heartcandy.png",
+//         10: "./lolipop.png",
+//         11: "./jelly.png",
+//         12: "./cane.png",
+//         13: "./cottoncandy.png",
+//         14: "./corn.png",
+//         15: "./choco.webp",
+//         16: "./heartcandy.png"
+//     }
+//     var clcard = 'img-'+ x;
+//     document.getElementById(clcard ).src = cell[x];
+//     console.log(x);
+// }
+
+
+// arr = [];
+// for(let i=0;i<16;i++){
+//     arr[i] = cell[i];
+// }
+
 
 // function image1() {
 //     var x1 = document.getElementById("img-1").src="./candy.png";

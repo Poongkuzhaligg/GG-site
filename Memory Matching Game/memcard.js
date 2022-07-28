@@ -1,9 +1,34 @@
-const cardclick = document.querySelectorAll(".card");
+// const cardclick = document.querySelectorAll(.card);
+// var cardclick = cardclick.forEach(card.addEventListener('click'));
+// console.log(cardclick);
 
-console.log(cardclick);
-cardclick.addEventListener('click', function(){
-    console.log(this);
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(cardclick);
+// cardclick.addEventListener('click', function(){
+//     console.log(this);
+// })
 
 
 

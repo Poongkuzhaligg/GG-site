@@ -15,7 +15,7 @@
     grid-template-rows: auto auto auto auto;
     border: 1x solid black;
     color: aliceblue;
-    perspective: 700px;
+    perspective: 800px;
     height: 700px;
     width: 700px;
     margin-top: 40px;
@@ -35,16 +35,18 @@
     margin: 0;
 }
 
-/* .card:hover {
+.card:active {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+    
+}
+
+
+/* .card.flip {
     transform: rotateY(180deg);
     transition: transform 1s;
+
 } */
-
-
-card.flip {
-    transform: rotateY(180deg);
-
-}
 
 .fro-img,
 .hid-img {
@@ -59,6 +61,7 @@ card.flip {
     transform: rotateY(180deg);
     background-color: rgba(240, 248, 255, 0.392);
     border: 3px solid black;
+
 }
 
 .fro-img {
