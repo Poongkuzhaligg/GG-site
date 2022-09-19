@@ -30,26 +30,26 @@
 .card {
     width: 150px;
     position: relative;
-    transform-style: preserve-3d;
-    transition: all 1s ease-in-out;
     margin: 0;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-out;
 }
 
-.card:active {
+/* .card:hover {
     transform: rotateY(180deg);
     transition: transform 0.5s;
     
-}
-
-
-/* .card.flip {
-    transform: rotateY(180deg);
-    transition: transform 1s;
-
 } */
 
-.fro-img,
-.hid-img {
+
+.flip {
+    transform: rotateY(180deg) perspective(700px);
+    transition: transform 1s;
+
+} 
+
+.hid-img,
+.fro-img {
     position: absolute;
     border-radius: 5px;
     backface-visibility: hidden;
@@ -67,4 +67,6 @@
 .fro-img {
     width: 150px;
     height: 150px;
+    transform: rotateY(0deg);
+
 }

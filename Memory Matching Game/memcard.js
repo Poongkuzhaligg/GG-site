@@ -1,7 +1,16 @@
-// const cardclick = document.querySelectorAll(.card);
-// var cardclick = cardclick.forEach(card.addEventListener('click'));
-// console.log(cardclick);
+let card = document.querySelectorAll(".card");
+let frocard = document.querySelectorAll(".fro-img");
 
+
+cardclick();
+
+function cardclick(){
+    for (let i=0; i<card.length; i++){
+        card[i].addEventListener('click', ()=>{
+            frocard[i].classList.add('flip');
+        })
+    }
+}
 
 
 
